@@ -1,0 +1,57 @@
+# Основные настройки
+baseURL = "https://schemion.github.io/schemion-docs/"
+languageCode = "ru-ru"
+title = "Schemion Docs"
+theme = "hextra"
+
+enableGitInfo = true 
+enableRobotsTXT = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true 
+  [markup.highlight]
+    noClasses = false 
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+[menu]
+  [[menu.main]]
+    identifier = "docs"
+    name = "Документация"
+    url = "/docs/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "О проекте"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/Schemion/schemion-docs"
+    weight = 3
+
+[params]
+  [params.editURL]
+    enable = true
+    base = "https://github.com/Schemion/schemion-docs/edit/main/content/"
+  
+  displayUpdatedDate = true
+
+  [params.footer]
+    since = 2024
+    copyright = "Schemion"
+
+  [params.search]
+    enable = true
+
+  [params.navbar]
+    displayTitle = true
+    displayLogo = false
+
+  [params.error404]
+    title = "Страница не найдена"
+    description = "Запрашиваемая страница не существует."
