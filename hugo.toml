@@ -27,12 +27,17 @@ enableRobotsTXT = true
     identifier = "about"
     name = "О проекте"
     url = "/about/"
+    weight = 3
+  [[menu.main]]
+    identifier = "posts"
+    name = "Записи"
+    url = "/posts/"
     weight = 2
   [[menu.main]]
     identifier = "github"
     name = "GitHub"
     url = "https://github.com/Schemion/schemion-docs"
-    weight = 3
+    weight = 4
 
 [params]
   [params.editURL]

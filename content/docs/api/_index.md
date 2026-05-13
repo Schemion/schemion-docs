@@ -1,6 +1,7 @@
 ---
 title: API
 description: Эндпоинты и форматы запросов
+weight: 20
 ---
 
 # API
