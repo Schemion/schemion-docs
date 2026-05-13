@@ -11,7 +11,6 @@ weight: 40
 | --- | --- | --- |
 | DATABASE_URL | `postgresql+asyncpg://admin:admin@database:5432/schemion` | `schemion-api` |
 | DATABASE_URL | `postgresql://admin:admin@database:5432/schemion` | `schemion-training`, `schemion-inference` |
-| REDIS_URL | `redis://:adminpass@redis:6379/0` | `schemion-api` |
 | MINIO_ENDPOINT | `minio:9000` | все сервисы |
 | MINIO_ACCESS_KEY | `minioadmin` | все сервисы |
 | MINIO_SECRET_KEY | `minioadmin` | все сервисы |

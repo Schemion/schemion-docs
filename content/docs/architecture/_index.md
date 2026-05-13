@@ -10,7 +10,6 @@ weight: 10
 ```text
 Клиент -> schemion-api -> PostgreSQL
 Клиент -> schemion-api -> MinIO
-schemion-api -> Redis
 schemion-api -> Bobber -> schemion-inference -> PostgreSQL
 schemion-api -> Bobber -> schemion-training -> PostgreSQL
 schemion-inference -> MinIO
@@ -55,7 +54,7 @@ schemion-training -> MinIO
 
 ## Кэш и лимиты
 
-- Redis используется для кэша сущностей и списков.
+- API использует in-memory кэш для сущностей и списков.
 - TTL по умолчанию: датасеты 1 час, модели 2 часа, задачи 30 минут, пользователь 30 минут.
 - Глобальный лимит запросов: 100 в минуту.
 
